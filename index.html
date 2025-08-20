@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RGA Assistência Técnica | Conserto de Celulares e Computadores em Bauru-SP</title>
+<meta name="description" content="RGA Assistência Técnica em Bauru-SP: conserto de celulares, notebooks e computadores com qualidade e confiança. Fale conosco pelo WhatsApp.">
+<link rel="icon" href="favicon.ico">
+<style>
+  :root {
+    --bg-color: #f9f9f9;
+    --text-color: #333;
+    --header-bg: #0056b3;
+    --hero-bg: #e6f0ff;
+    --button-bg: #28a745;
+    --footer-bg: #0056b3;
+    --link-color: #ffdd57;
+  }
+  body.dark {
+    --bg-color: #121212;
+    --text-color: #eee;
+    --header-bg: #1f1f1f;
+    --hero-bg: #1a1a1a;
+    --button-bg: #28a745;
+    --footer-bg: #1f1f1f;
+    --link-color: #ffdd57;
+  }
+  body {
+    margin: 0;
+    font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+    transition: background 0.3s, color 0.3s;
+  }
+  header {
+    background: var(--header-bg);
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  header h1 { margin: 0; font-size: 20px; }
+  nav a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  nav a:hover { text-decoration: underline; }
+  .theme-toggle {
+    background: none;
+    border: 2px solid white;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: var(--hero-bg);
+  }
+  .hero h2 { font-size: 28px; margin-bottom: 15px; }
+  .hero a {
+    display: inline-block;
+    background: var(--button-bg);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 15px;
+  }
+  .section { padding: 50px 20px; max-width: 1000px; margin: auto; }
+  .section h2, .section h3 { text-align: center; margin-bottom: 30px; }
+  .section h2 { font-size: 26px; }
+  .section h3 { font-size: 24px; }
+  .services, .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  .card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: background 0.3s, box-shadow 0.3s;
+  }
+  body.dark .card {
+    background: #1f1f1f;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.6);
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--footer-bg);
+    color: white;
+    margin-top: 40px;
+  }
+  footer a { color: var(--link-color); margin: 0 10px; text-decoration: none; }
+  .whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  .whatsapp-float:hover { background-color: #20b955; }
+  .whatsapp-float svg { width: 32px; height: 32px; fill: white; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>RGA Assistência Técnica em Bauru-SP</h1>
+  <nav>
+    <a href="#servicos">Serviços</a>
+    <a href="#produtos">Produtos</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contato">Contato</a>
+  </nav>
+  <button class="theme-toggle" onclick="toggleTheme()">🌓 Tema</button>
+</header>
+
+<section class="hero">
+  <h2>Conserto de celulares, notebooks e computadores em Bauru-SP</h2>
+  <p>Atendimento rápido, confiável e especializado. Fale conosco agora pelo WhatsApp.</p>
+  <a href="https://wa.me/5514991014177?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20conserto." target="_blank">Fale no WhatsApp</a>
+</section>
+
+<section id="servicos" class="section">
+  <h2>Serviços de Assistência Técnica em Bauru-SP</h2>
+  <div class="services">
+    <div class="card">📱 Conserto de celulares em Bauru</div>
+    <div class="card">💻 Manutenção de notebooks</div>
+    <div class="card">🖥️ Reparos em computadores</div>
+    <div class="card">🔌 Troca de telas e baterias</div>
+  </div>
+</section>
+
+<section id="produtos" class="section">
+  <h2>Produtos e Acessórios</h2>
+  <div class="products">
+    <div class="card">📦 Capinhas e películas</div>
+    <div class="card">⚡ Carregadores originais</div>
+    <div class="card">💾 HDs e SSDs</div>
+    <div class="card">🎧 Acessórios em geral</div>
+  </div>
+</section>
+
+<section id="sobre" class="section">
+  <h2>Sobre a RGA Assistência Técnica</h2>
+  <p>A <b>RGA Assistência Técnica</b> é especializada em conserto de eletrônicos em Bauru-SP, oferecendo serviços rápidos e confiáveis. Nossa equipe é dedicada e experiente, garantindo qualidade e satisfação para cada cliente.</p>
+</section>
+
+<section id="contato" class="section">
+  <h2>Contato e Localização</h2>
+  <p>📍 Rua Agenor Meira, 3-20, Centro - Bauru/SP</p>
+  <p>📞 Telefone/WhatsApp: <a href="https://wa.me/5514991014177" target="_blank">(14) 99101-4177</a></p>
+  <p>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.0875155748376!2d-49.06597958555895!3d-22.3173902235468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bf67e8f7f1d1c5%3A0x1f79a6e9c6b02f8d!2sR.%20Agenor%20Meira%2C%203-20%20-%20Centro%2C%20Bauru%20-%20SP%2C%2017010-220!5e0!3m2!1spt-BR!2sbr!4v1723980000000!5m2!1spt-BR!2sbr" 
+      width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </p>
+</section>
+
+<footer>
+  <p>© 2025 RGA Assistência Técnica | Bauru-SP</p>
+  <p>
+    <a href="https://www.instagram.com/ricardoalmeida3535" target="_blank">Instagram</a> |
+    <a href="https://facebook.com/ricardo_almeida@live.com" target="_blank">Facebook</a>
+  </p>
+</footer>
+
+<a href="https://wa.me/5514991014177?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20conserto." class="whatsapp-float" target="_blank">
+  <svg viewBox="0 0 32 32">
+    <path d="M16 .396c-8.817 0-15.957 7.14-15.957 15.957 0 2.813.732 5.559 2.123 7.978l-2.26 8.276 8.465-2.22c2.356 1.29 5.034 1.972 7.628 1.972h.001c8.817 0 15.957-7.14 15.957-15.957s-7.14-15.957-15.957-15.957zm7.389 19.136c-.403-.202-2.38-1.175-2.747-1.31-.368-.137-.636-.202-.905.202-.268.403-1.039 1.31-1.274 1.578-.235.269-.47.303-.873.101-.403-.202-1.702-.627-3.24-1.998-1.197-1.068-2.005-2.389-2.24-2.792-.235-.403-.025-.62.177-.822.182-.182.403-.47.605-.705.202-.235.269-.403.403-.672.134-.269.067-.505-.034-.705-.101-.202-.905-2.179-1.24-2.982-.327-.786-.66-.68-.905-.693-.235-.013-.505-.016-.774-.016s-.705.101-1.073.505c-.368.403-1.407 1.376-1.407 3.352s1.44 3.89 1.64 4.157c.202.269 2.834 4.328 6.863 6.064.959.414 1.707.662 2.29.847.961.306 1.835.263 2.526.16.771-.115 2.38-.971 2.715-1.907.336-.935.336-1.737.235-1.907-.101-.168-.369-.269-.772-.47z"/>
+  </svg>
+</a>
+
+<script>
+  // Carrega tema salvo no localStorage
+  document.addEventListener("DOMContentLoaded", function() {
+    const savedTheme = localStorage.getItem('theme');
+    if(savedTheme) {
+      document.body.classList.add(savedTheme);
+    }
+  });
+
+  // Alterna tema e salva escolha
+  function toggleTheme() {
+    document.body.classList.toggle('dark');
+    if(document.body.classList.contains('dark')){
+      localStorage.setItem('theme', 'dark');
+    } else {
+      localStorage.setItem('theme', '');
+    }
+  }
+</script>
+
+</body>
+</html>
